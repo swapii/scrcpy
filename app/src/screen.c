@@ -396,7 +396,7 @@ sc_screen_init(struct sc_screen *screen,
 
     // The window will be positioned and sized on first video frame
     screen->window =
-        SDL_CreateWindow(params->window_title, 0, 0, 0, 0, window_flags);
+        SDL_CreateWindow("HELLO", 0, 0, 0, 0, window_flags);
     if (!screen->window) {
         LOGE("Could not create window: %s", SDL_GetError());
         goto error_destroy_fps_counter;

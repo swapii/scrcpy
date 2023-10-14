@@ -257,6 +257,7 @@ if get_option('buildtype') == 'debug'
     tests = [
         ['test_adb_parser', [
             'tests/test_adb_parser.c',
+            'src/compat.c',
             'src/adb/adb_device.c',
             'src/adb/adb_parser.c',
             'src/util/str.c',
@@ -300,10 +301,12 @@ if get_option('buildtype') == 'debug'
         ]],
         ['test_vecdeque', [
             'tests/test_vecdeque.c',
+            'src/compat.c',
             'src/util/memory.c',
         ]],
         ['test_vector', [
             'tests/test_vector.c',
+            'src/compat.c',
         ]],
     ]
 
